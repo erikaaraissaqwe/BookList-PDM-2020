@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="NewBookActivity">
+
+    <TextView
+        android:id="@+id/titleTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/titleEt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleTv" />
+
+    <TextView
+        android:id="@+id/isbnTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/isbn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleEt" />
+
+    <EditText
+        android:id="@+id/isbnEt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/isbnTv" />
+
+    <TextView
+        android:id="@+id/firstAuthorTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/first_author"
+        android:labelFor="@id/firstAuthorEt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/isbnEt" />
+
+    <EditText
+        android:id="@+id/firstAuthorEt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstAuthorTv"
+        android:importantForAutofill="no" />
+
+    <TextView
+        android:id="@+id/publishingCompanyTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/publishing_company"
+        android:labelFor="@id/publishingCompanyEt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstAuthorEt" />
+
+    <EditText
+        android:id="@+id/publishingCompanyEt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/publishingCompanyTv"
+        android:importantForAutofill="no" />
+
+    <TextView
+        android:id="@+id/editionTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/edition"
+        android:labelFor="@id/editionEt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/publishingCompanyEt" />
+
+    <EditText
+        android:id="@+id/editionEt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editionTv"
+        android:importantForAutofill="no" />
+
+    <TextView
+        android:id="@+id/pagesTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/pages"
+        android:labelFor="@id/pagesEt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editionEt" />
+
+    <EditText
+        android:id="@+id/pagesEt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pagesTv"
+        android:importantForAutofill="no" />
+
+    <Button
+        android:id="@+id/saveBt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:onClick="onClick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pagesEt" />
+</androidx.constraintlayout.widget.ConstraintLayout>
